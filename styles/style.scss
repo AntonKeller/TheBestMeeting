@@ -1,0 +1,108 @@
+$dColor  : #18216D;
+$f_s_btn : 17px;
+$f_s_link: 18px;
+$pad_btn : 10px 15px;
+
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+    outline   : none;
+
+}
+
+.header {
+    height         : 52px;
+    margin         : 20px 60px;
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    align-items    : center;
+    font-family    : 'Inter', sans-serif;
+
+    .wrap_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .img_logo{
+            width: 45px;
+            height: 45px;
+            background: url('../img/logo.jpg') no-repeat;
+            background-size: cover;
+            margin-right: 5px;
+            box-shadow: 0 6px 6px #18206d2a;
+        }
+        .txt{
+            display: inline-block;
+            font-family: inherit;
+            font-size: 20px;
+            color: $dColor;
+            text-shadow: 0 6px 6px #18206d2a;
+        }
+    }
+
+
+    ul {
+        display        : flex;
+        flex-direction : row;
+        justify-content: center;
+        align-items    : center;
+
+        li {
+            list-style-type: none;
+
+            a {
+                text-decoration: none;
+                font-family    : 'Inter', sans-serif;
+                font-size      : $f_s_link;
+                margin         : 0 20px;
+            }
+        }
+    }
+
+    .wrap_btn {
+
+        .sing_in,
+        .download {
+            border     : 0;
+            margin     : 0;
+            padding    : $pad_btn;
+            outline    : 0;
+            font-family: inherit;
+            font-size  : $f_s_btn;
+        }
+
+        .sing_in {
+            background  : #fff;
+            color       : $dColor;
+            margin-right: 10px;
+            text-shadow : 0 6px 6px #18206d2a;
+        }
+
+        .download {
+            background-color: $dColor;
+            border-radius   : 6px;
+            color           : #fff;
+            box-shadow      : 0 6px 6px #18206d2a;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+.block {
+    position        : relative;
+    display         : flex;
+    width           : 100%;
+    height          : 200px;
+    align-items     : center;
+    justify-content : center;
+    background-color: rgb(255, 145, 145);
+    border          : 2px solid black;
+}
